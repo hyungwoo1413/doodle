@@ -16,7 +16,8 @@ def ipguCut(input):
             num += 1
     input.sort()
     del(input[0:num])
-    return input
+    result = input
+    return result
     
 print(ipguCut(ages))
 

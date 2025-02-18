@@ -34,9 +34,14 @@
 
 dict = { '최보정' : 1995 , '이형우' : 1996 , '강석준' : 1995 , '우동관' : 2000 , '황석준' : 1996 , '김찬수' : 2000 }
 
-for i,jj in dict.items():
+for i in dict:
     print(f'{i} : {2025 - dict[i]}세')
 
-# print(i) -> keys 값 출력
-# print(dict[i]) -> values 값 출력 
-# print(dict['최보정']) # 1995
+# 반복문으로 dict 리스트를 출력
+# print(i) -> keys 값 출력 (최보정 이형우 강석준 우동관 황석준 김찬수)
+# print(dict[i]) -> values 값 출력 (1995 1996 1995 2000 1996 2000)
+
+print('\n')
+
+for i,j in dict.items():
+    print(f'{i} : {2025 - j}세')
